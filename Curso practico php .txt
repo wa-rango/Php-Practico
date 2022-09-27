@@ -1,0 +1,199 @@
+https://sveacol.slack.com/archives/D042UFGGRH9/p1663877220473969
+
+Que es el pensamiento logico?
+
+Herramientas para entrenar pensamient logico 
+
+Plataformas de retos online
+
+Diagramas de flujo 
+
+Escribir el paso a paso de varias formas
+
+Resolver ejercicios matematicos
+
+
+
+**para que podamos ver el resultado de una variable se puede utilizar la funcion , no es el comun pero es util     *** var_dump
+
+
+
+
+
+eN OPERADORES LOGICOS && CUMPLE LA MISMA FUNCION DE AND pero da prioridad a verificar el lad izquierdo antes que el otro 
+
+
+al usar XOR Y haber variables repetidas no va funcionar 
+
+
+
+
+Operadores aritméticos con PHP
+Son aquellos que nos permiten trabajar con operaciones básicas.
+
+Suma, resta, multiplicación, división, módulo y potenciación.
+
+Les comparto unas notas bastante interesantes sobre operadores aritméticos con PHP:
+
+Operadores aritméticos:
+
+Suma: Para sumar dos valores usamos el signo +.
+Resta: Para restar dos valores usamos el signo -.
+Multiplicación: Para multiplicar dos valores usamos el signo *.
+División: Para dividir dos valores usamos el signo /.
+Incremento: Sirve para incrementar un valor numérico en 1, usamos el operador ++. Ejemplo: $value++, sumará 1 a $value.
+Decremento: Sirve para disminuir un valor numérico en 1, usamos el operador --. Ejemplo: $value--, restará 1 a $value.
+Módulo: Sirve para saber el resto de una división entera, usamos el operador %. Ejemplo: 10 % 3; da como resultado 1. Un uso muy polular de este operador es para saber si un número es par o impa
+
+
+<?php
+$valorA =5;
+$valorB =2;
+
+$multiplicacion = $valorA * $valorB;
+var_dump($multiplicacion);
+?>
+
+Resultado 
+
+int(10)
+
+___________________________________________________
+
+
+<?php
+$valorA =5;
+$valorB =2;
+
+$division = $valorA / $valorB;
+var_dump($division);
+?>
+
+
+resultado
+
+float(2.5)
+
+
+__________________________________________________
+
+<?php
+$valorA =5;
+$valorB =2;
+
+$modulo = $valorA % $valorB;
+var_dump($modulo);
+?>
+
+
+resultado 
+
+int(1)
+
+__________________________________________________
+
+POTENCIACION 
+
+
+<?php
+$valorA =5;
+$valorB =2;
+
+$potenciacion = $valorA ** $valorB;
+var_dump($potenciacion);
+?>
+
+resultado 
+
+int(25)
+
+__________________________________________________
+
+
+
+
+ESTRUCTURAS DE CONTROL Y COMO SE USAN EN PHP 
+
+
+IF /  ELSE
+
+<?php
+
+$valorA =5;
+
+if($valorA == 10) {
+    echo "Es igual a 10";
+} else {
+    echo "No es igual a 10";
+}
+?>
+
+
+__________________________________________________
+
+
+ESTRUCTURA DE CONTROL WHILE - DO WHILE 
+
+eS UNA DE LAS ESTRUCTURAS QUE SE TRATA COMO UN CICLO 
+
+Se va necesitar una variable iniciada en 0 
+
+
+<?php
+
+$i = 0;
+while($i <=10) {
+    echo $i++;
+}
+?>
+
+
+resultado
+
+012345678910
+
+
+
+distinta manera mismo resultado 
+
+
+<?php
+
+$i = 0;
+do {
+    echo $i++;
+}   while($i <=10);
+?>
+
+resultado 
+
+012345678910
+
+__________________________________________________
+
+
+CICLO FOR / FOREACH
+
+
+Primero se declara el array con 4 numeros 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
