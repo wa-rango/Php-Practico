@@ -176,12 +176,163 @@ CICLO FOR / FOREACH
 
 
 Primero se declara el array con 4 numeros 
+para recorrer con ciclo FOR 
+
+A esa variable se le pide que interactue en 4 ocasiones y vaya incrementando su valor 
+
+y al final que nos muestre el valor 
+
+<?php
+
+$arr = array(1,2,3,4);
+for($i=0; $i<4; $i++) {
+    echo $arr[$i];
+}
+
+?>
+
+
+RESULTADO :  1234
+
+nos ayuda con un array para pasar por las posiciones y hacer lo que queramos 
+
+
+FOR Y FOR EACH TIENEN DIFERENCIA EN SU SINTAXIS 
+
+
+<?php
+$arr = array(1,2,3,4); //array de 4 posiciones 
+foreach($arr as $value) {  //recorre la variable $arr y ponle nombre value
+    echo $value; //muestre variable value  
+}
+
+?>
+
+RESULTADO : 1234
+
+
+Si utilizamos un arreglo asociativo con clave y valor para sus elementos, la estructura de control foreach queda de la siguiente manera:
 
 
 
+<?php
+$arreglo = [
+    'color' => 'verde',
+    'lugar' => 'playa',
+    'año' => 2021
+];
+
+foreach($arreglo as $llave => $valor) {
+    echo $llave . ' = ' . $valor . PHP_EOL;
+}
+
+
+
+
+SALIDA:
+
+
+color = verde
+lugar = playa
+año = 2021 
+
+
+
+
+____________________________________________________________________________________________
+
+
+INSTRUCCION (SWITCH)
+
+Con esta instruccion vas a poder tener varios casos de evaluacion para una variable en una sola estructura de control 
 
  
+ 
+<?php
+$ValorA = 6;
 
+switch($ValorA) {
+    case 1:
+        echo "El valor es 1";
+    break;
+    case 2:
+        echo "El valor es 2";
+    break;
+    case 3:
+        echo "El valor es 3";
+    break;
+    default:
+        echo "No es ninguno de los valores 1, 2 o 3";
+    break;
+}
+
+
+RESULTADOS :  No es ninguno de los valores 1, 2 o 3
+
+
+______________________________________________________________________________________________
+
+
+
+QUE SON LAS FUNCIONES EN PHP 
+
+
+TIPO 
+funciones del codigo 
+funciones del array sobre la documentacion 
+
+
+
+<?php
+$ValorA = 3;
+
+switch($ValorA) {
+    case 1:
+        echo "El valor es 1";
+    break;
+    case 2:
+        echo "El valor es 2";
+    break;
+    case 3:
+        echo "El valor es 3";
+    break;
+    default:
+        echo "No es ninguno de los valores 1, 2 o 3";
+    break;
+}
+
+
+
+OTRO EJEMPLO 
+
+<?php
+
+$nombre = "Camila";
+$apellido = "Rojas";
+
+echo $nombre.' '.$apellido;
+
+?>
+
+
+RESULTADO : Camila Rojas
+
+
+AHORA SI VAMOS A AGREGAR LO ANTERIOR A  UNA FUNCION 
+
+<?php
+
+$nombre = "Camila";
+$apellido = "Rojas";
+
+function concatenar($nombre, $apellido) {
+    echo $nombre.' '.$apellido;
+}
+
+?>
+
+
+SALIDA= Camila Rojas
 
 
 
