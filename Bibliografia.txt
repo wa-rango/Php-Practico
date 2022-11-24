@@ -1,0 +1,3 @@
+www.php.net/manual.es.functions
+
+https://www.php.net/manual-lookup.php?pattern=slug&scope=quickref
